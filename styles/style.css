@@ -1,0 +1,145 @@
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --main-bg-blue: hsl(217, 54%, 11%);
+  --card-bg-blue: hsl(216, 50%, 16%);
+  --line-blue: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background-color: var(--main-bg-blue);
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  font-size: 18px;
+}
+
+.card {
+  background-color: var(--card-bg-blue);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 330px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 0px 25px 50px 14px #01000cc4;
+}
+
+.inner-card-frame {
+  margin: 25px;
+}
+
+.nft-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.nft-img-overlay {
+  width: 280px;
+  height: 280px;  
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 25px;
+  border-radius: 10px;
+  background-color: hsla(178, 100%, 50%, 0.420);
+  opacity: 0;
+}
+
+.nft-img-overlay:hover {
+  opacity: 1;
+}
+
+.nft-title {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.nft-title:hover {
+  color: var(--cyan)
+}
+
+.nft-desc {
+  color: var(--soft-blue);
+}
+
+.offer-info {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.offer-price {
+  font-weight: 600;
+  color: var(--cyan)
+}
+
+.offer-price img {
+  vertical-align: sub;
+}
+
+.offer-time {
+  font-weight: 400;
+  color: var(--soft-blue)
+}
+
+.offer-time img {
+  vertical-align: sub;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--line-blue);
+}
+
+.creator-mention {
+  display: inline-flex;
+  width: 100%;
+  height: 30px;
+  margin: 10px 0 0 0;
+  color: var(--soft-blue);
+  align-items: center;
+}
+
+.creator-mention a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.creator-mention a:hover {
+  color: var(--cyan);
+}
+
+.creator-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+  margin-right: 20px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 5px;
+}
+
+.attribution a {
+  text-decoration: none;
+}
+
+.creeper-aww-man {
+  color: var(--soft-blue);
+}
